@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import fotoperfil from '@/assets/images/fotoperfil.jpg'
+import fotoperfil from '@/assets/images/fotoperfil.png'
 </script>
 
 

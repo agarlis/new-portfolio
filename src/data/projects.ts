@@ -70,7 +70,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'The Fold',
+    slug: 'the-fold',
     title: 'The Fold',
     description: 'Diseño y estrategia para una nueva tienda coworking.',
     imageUrl: portadaTheFold,
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'ESCLAT',
+    slug: 'esclat',
     title: 'ESCLAT',
     description: 'Campaña de comunicación sobre el festival de música, pensament i creativitat.',
     imageUrl: esclatPortada,
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'Salud mental en diseñadores',
+    slug: 'salud-mental-disenadores',
     title: 'Salud mental en diseñadores',
     description: 'Diseño de envases con enfoque sostenible.',
     imageUrl: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80',

@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 
 import Logo from '@/assets/icons/Logomulticolor.svg'
-import fotoperfil from '@/assets/images/fotoperfil.jpg'
+import fotoperfil from '@/assets/images/fotoperfil.png'
 
 import ProjectCard from '@/components/ProjectCard.vue'
 import { projects } from '@/data/projects'
