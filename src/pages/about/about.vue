@@ -268,80 +268,139 @@ progress:hover::-moz-progress-bar {
   }
 }
 
+/* ---------- TABLETS ---------- */
 @media (max-width: 1024px) {
   .about-hero {
     gap: 3rem;
-    padding: 72px 40px;
+    padding: 70px 40px;
+    align-items: center;
   }
 
   .about-text h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 
   .competencias,
   .herramientas {
-    padding: 56px 40px;
-  }
-
-  .skills {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-hero {
-    grid-template-columns: 1fr;
-    padding: 64px 28px;
-  }
-
-  .about-image {
-    max-width: 480px;
-    margin: 0 auto;
+    padding: 60px 40px;
   }
 
   .competencias h2,
   .herramientas h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .skills {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
-@media (max-width: 520px) {
-  .about-hero,
-  .competencias,
-  .herramientas {
-    padding: 52px 20px;
+/* ---------- MÓVILES ---------- */
+@media (max-width: 768px) {
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    padding: 50px 24px;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 30px;
   }
 
   .about-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-align: left;
   }
 
   .about-text p {
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.8;
+    text-align: left;
   }
 
-  .about-image img {
-    border-radius: 28px;
+  .competencias,
+  .herramientas {
+    padding: 50px 24px;
   }
 
   .competencias h2,
   .herramientas h2 {
-    font-size: 2.35rem;
+    font-size: 2.6rem;
   }
 
   .competencias ul {
+    font-size: 1rem;
     line-height: 1.8;
   }
 
   .skills {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.8rem;
+  }
+
+  .skill span {
+    font-size: 1rem;
+  }
+
+  progress {
+    height: 14px;
+  }
+}
+
+/* ---------- MÓVILES PEQUEÑOS ---------- */
+@media (max-width: 480px) {
+
+  .about-hero {
+    padding: 40px 18px;
+  }
+
+  .about-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-text p {
+    font-size: .95rem;
+    line-height: 1.7;
+  }
+
+
+  .competencias,
+  .herramientas {
+    padding: 40px 18px;
+  }
+
+  .competencias h2,
+  .herramientas h2 {
+    font-size: 2rem;
+  }
+
+  .competencias ul {
+    font-size: .95rem;
+  }
+
+  .skill span {
+    font-size: .95rem;
+  }
+
+  progress {
+    height: 12px;
   }
 }
 

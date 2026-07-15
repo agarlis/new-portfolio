@@ -37,7 +37,7 @@ const galleryImages = computed(() => {
   v-if="project"
   class="min-h-screen bg-[#DED5E9] text-[#514685]"
 >
-  <div class="px-5 py-8 sm:px-8 md:px-12 lg:px-16 lg:py-12">
+  <div class="mx-auto max-w-7xl px-5 py-8 sm:px-8 md:px-12 lg:px-16 lg:py-12">
 
     <!-- HERO -->
     <section class="mb-16 lg:mb-20">
@@ -46,16 +46,16 @@ const galleryImages = computed(() => {
         {{ project.tag }}
       </p>
 
-      <h1 class="mb-6 text-[clamp(2.75rem,13vw,8rem)] leading-none font-normal text-[#988CBE] sm:mb-8">
+      <h1 class="mb-6 text-[clamp(2.4rem,12vw,7rem)] leading-[0.95] font-normal text-[#988CBE] sm:mb-8">
         {{ project.title }}
       </h1>
 
-      <p class="max-w-2xl text-base leading-7 text-[#988cbe] sm:text-lg sm:leading-8">
+      <p class="max-w-2xl text-[15px] leading-7 text-[#988cbe] sm:text-lg sm:leading-8">
         {{ project.summary }}
       </p>
 
-      <div class="mt-10 grid border-y-2 border-[#F9F2AA] sm:mt-12 md:grid-cols-3">
-        <div class="py-5">
+      <div class="mt-10 grid grid-cols-1 border-y-2 border-[#F9F2AA] sm:mt-12 md:grid-cols-3">
+        <div class="py-5 border-b border-[#F9F2AA] last:border-b-0 md:border-b-0">
           <span class="block text-xs uppercase font-bold text-[#B8ABD4]">
             Año
           </span>
@@ -65,7 +65,7 @@ const galleryImages = computed(() => {
           </strong>
         </div>
 
-        <div class="py-5">
+        <div class="py-5 border-b border-[#F9F2AA] last:border-b-0 md:border-b-0">
           <span class="block text-xs uppercase font-bold text-[#B8ABD4]">
             Rama
           </span>
@@ -75,7 +75,7 @@ const galleryImages = computed(() => {
           </strong>
         </div>
 
-        <div class="py-5">
+        <div class="py-5 border-b border-[#F9F2AA] last:border-b-0 md:border-b-0">
           <span class="block text-xs uppercase font-bold text-[#B8ABD4]">
             Rol
           </span>
@@ -115,9 +115,9 @@ const galleryImages = computed(() => {
     </section> -->
 
     <!-- PROCESO -->
-    <section class="grid gap-6 md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
+    <section class="grid gap-8 md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
 
-      <h2 class="text-3xl font-normal text-[#b8abd4] sm:text-4xl">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-normal text-[#b8abd4]">
         Proceso creativo
       </h2>
 
@@ -151,12 +151,12 @@ const galleryImages = computed(() => {
           :key="image.src"
           type="button"
           @click="selectedImage = image"
-          class="overflow-hidden rounded-2xl bg-[#F9F2AA] sm:rounded-3xl"
+          class="overflow-hidden rounded-xl bg-[#F9F2AA] transition duration-300 hover:scale-[1.01] sm:rounded-3xl"
         >
           <img
             :src="image.src"
             :alt="image.alt"
-            class="block w-full h-auto"
+            class="block w-full h-auto object-cover"
           >
         </button>
       </div>
@@ -172,7 +172,7 @@ const galleryImages = computed(() => {
           Sigue explorando
         </p>
 
-        <h2 class="text-4xl font-normal text-[#A89ACB] sm:text-5xl">
+        <h2 class="text-3xl font-normal text-[#A89ACB] sm:text-4xl lg:text-5xl">
           Más proyectos
         </h2>
 
@@ -184,13 +184,13 @@ const galleryImages = computed(() => {
           v-for="item in relatedProjects"
           :key="item.slug"
           :to="`/projects/${item.slug}`"
-          class="grid overflow-hidden rounded-3xl bg-[#F9F2AA] sm:grid-cols-[180px_1fr] md:grid-cols-[220px_1fr]"
+          class="grid overflow-hidden rounded-2xl bg-[#F9F2AA] transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:grid-cols-[180px_1fr] md:grid-cols-[220px_1fr] lg:rounded-3xl"
         >
 
           <img
             :src="item.imageUrl"
             :alt="item.title"
-            class="h-56 w-full object-cover sm:h-full"
+            class="h-52 w-full object-cover sm:h-full"
           >
 
           <div class="flex flex-col justify-end p-5 sm:p-6">
@@ -199,9 +199,9 @@ const galleryImages = computed(() => {
               {{ item.tag }}
             </span>
 
-            <strong class="text-2xl font-medium">
+            <h2 class="text-2xl font-medium text-[#988CBE] sm:text-3xl">
               {{ item.title }}
-            </strong>
+            </h2>
 
           </div>
 

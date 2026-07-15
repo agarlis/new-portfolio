@@ -106,18 +106,18 @@ const visibleProjects = computed(() => projects.slice(0, 3))
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 60px;
-  gap: 3rem;
+  padding: 72px 60px;
+  gap: 2.5rem;
   overflow: hidden;
 }
 
 .hero-left {
-  max-width: 600px;
+  max-width: 700px;
   min-width: 0;
 }
 
 .hero-left h1 {
-  font-size: 6rem;
+  font-size: 4.2rem;
   font-weight: 400;
   line-height: 0.95;
   color: #b4a8d6;
@@ -125,6 +125,7 @@ const visibleProjects = computed(() => projects.slice(0, 3))
 
 .hero-left span {
   color: #f9f2aa;
+  font-weight: 800;
 }
 
 .hero-left p {
@@ -145,7 +146,7 @@ const visibleProjects = computed(() => projects.slice(0, 3))
 }
 
 .hero-right img {
-  width: 500px;
+  width: 420px;
   max-width: 100%;
   height: auto;
 }
@@ -158,7 +159,8 @@ const visibleProjects = computed(() => projects.slice(0, 3))
 .projects-header h2 {
   color: #988cbe;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .carousel-wrapper {
@@ -247,11 +249,17 @@ const visibleProjects = computed(() => projects.slice(0, 3))
 }
 
 .titulo-nombre {
-  font-family: 'Syne', sans-serif;
-  font-size: 3.75rem;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
   color: #f9f2aa;
   margin: 0 0 24px 0;
+}
+
+@media (max-width: 390px) {
+  .hero-left h1 {
+    font-size: 2.8rem;
+  }
 }
 
 .descripcion-perfil {
@@ -405,7 +413,7 @@ const visibleProjects = computed(() => projects.slice(0, 3))
   }
 
   .titulo-nombre {
-    font-size: 2.85rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
@@ -450,8 +458,8 @@ const visibleProjects = computed(() => projects.slice(0, 3))
   }
 
   .titulo-nombre {
-    font-size: 2.4rem;
-  }
+  font-size: 2rem !important;
+}
 
   .hero-left p,
   .descripcion-perfil {

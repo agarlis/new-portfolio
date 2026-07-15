@@ -13,6 +13,10 @@ import esclat01 from '@/assets/images/esclat_1.png'
 import esclat02 from '@/assets/images/esclat_2.png'
 import esclat03 from '@/assets/images/esclat_3.png'
 import esclat04 from '@/assets/images/esclat_4.png'
+import revista01 from '@/assets/images/revista_1.png'
+import revista02 from '@/assets/images/revista_2.png'
+import revista03 from '@/assets/images/revista_3.png'
+
 
 export interface Project {
   slug: string
@@ -145,13 +149,13 @@ export const projects: Project[] = [
   },
   {
     slug: 'salud-mental-disenadores',
-    title: 'Salud mental en diseñadores',
-    description: 'Diseño de envases con enfoque sostenible.',
-    imageUrl: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80',
+    title: 'Revista',
+    description: 'Diseño editorial de una revista tipográfica.',
+    imageUrl: revista03,
     tag: 'Editorial',
-    year: '2026',
+    year: '2025',
     role: 'Diseño editorial',
-    summary: 'Diseño de packaging con una lectura limpia, materiales visualmente cuidados y una comunicación enfocada en sostenibilidad.',
+    summary: 'Diseño editorial sobre una revista tipográfica de salud en diseñadores con una lectura limpia.',
     details: [
       'Referencias editoriales para definir el estilo gráfico y establecer una dirección visual coherente con la temática.',
       'Desarrollo del concepto gráfico, selección tipográfica, paleta cromática y sistema editorial.',
@@ -159,24 +163,14 @@ export const projects: Project[] = [
     ],
     gallery: [
       {
-        src: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=85',
+        src: revista01,
         alt: 'Presentación principal de packaging',
         format: 'wide',
       },
       {
-        src: 'https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=900&q=85',
-        alt: 'Detalle cuadrado del envase',
+        src: revista02,
+        alt: 'Post cuadrado para redes sociales',
         format: 'square',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1585386959984-a41552231658?auto=format&fit=crop&w=900&q=85',
-        alt: 'Mockup de producto y etiqueta',
-        format: 'square',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=85',
-        alt: 'Familia de producto en formato amplio',
-        format: 'wide',
       },
     ],
   }

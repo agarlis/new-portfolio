@@ -39,11 +39,6 @@ withDefaults(defineProps<Props>(), {
         <CardDescription class="description-custom">{{ description }}</CardDescription>
       </CardHeader>
 
-      <CardContent class="content-custom">
-        <slot>
-          <p>Contenido del proyecto</p>
-        </slot>
-      </CardContent>
 
       <CardFooter v-if="$slots.footer || footerText" class="footer-custom">
         <slot name="footer">
